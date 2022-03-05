@@ -1,7 +1,21 @@
-/* My Beeper 'Eleganter' Theme
+/*
+   My Beeper 'Eleganter' Theme
+
    This should work with both Dark and Light themes
-   Repo: https://github.com/dzg/beeper/dzg-beeper-eleganter-theme.css
-   Version: 1.0
+
+   Features:
+   - Flatter. No borders.
+   - Sexier 'Spacebar'
+   - Muted room indicator
+   - Less obtrusive unread
+   - Full width date separators
+   - No 'Send' text, ▶ is good enough for me
+   - Bigger monospace text areas in prefs
+   - Different fonts for UI and Messages
+   - No purple gradient
+
+   Repo: https://github.com/dzg
+   Version: 1
 */
 
 
