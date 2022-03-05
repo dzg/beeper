@@ -8,14 +8,16 @@ First, a more elegant (IMHO) theme for the desktop client: https://github.com/dz
 
 This should work with both Dark and Light themes.
 
+Just copy the source, go to **Settings > Appearance,** paste into the **Custom CSS** box, and click **Apply.**
+
 ### Features:
 
 *   Flatter. No borders.
 *   Sexier 'Spacebar'
-*   Muted room indicator
-*   Less obtrusive unread
+*   Muted rooms: indicator + dimming
+*   Less obtrusive unread indicator
 *   Full width date separators
-*   No 'Send' text, ▶ is good enough for me
+*   No 'Send' text, just ▶ 
 *   Bigger monospace text areas in prefs
 *   Different fonts for UI and Messages
 *   No purple gradient
