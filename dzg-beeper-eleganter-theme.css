@@ -1,0 +1,116 @@
+/* My Beeper 'Eleganter' Theme
+   This should work with both Dark and Light themes
+   Repo: https://github.com/dzg/beeper/dzg-beeper-eleganter-theme.css
+   Version: 1.0
+*/
+
+
+/* I like Roboto*/
+* { 
+   font-family: Roboto, system-ui, Avenir, Helvetica, Lato, Apple Color Emoji, Twemoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif, Noto Color Emoji !important;
+}
+
+/* Messages with serifs */
+.mx_EventTile_body {
+   font-family: RobotoSlab-Regular !important;
+}
+
+/* Mono when I'm tweaking CSS */
+textarea#mx_Field_15, textarea#mx_Field_10 {
+   font-family: monospace !important;
+   font-size: 80% !important;
+}
+
+/* Need more room for my CSS */
+.mx_AppearanceUserSettingsTab .mx_Field {
+   width: 100%;
+   height: 50ex;
+}
+.mx_DevTools_textarea textarea {
+   font-family: monospace !important;
+}
+
+/* Full width date separator */
+.mx_DateSeparator > div {
+   width: 100% !important;
+   border: none !important;
+   background: hsl(0deg 0% 50% / 15%) !important;
+   border-radius: 0 !important;
+   height: 4ex !important;
+}
+
+/* Not a fan of the gradient */
+.mx_EventTile_messageOut .mx_EventTile_line {
+   background: hsl(276, 82%, 59%);
+}
+
+/* Spacebar is clunky and I don't like borders. Let's flatten it. */
+.bp_LeftPanel .spaceBar .grid {
+   grid-gap: 1px !important;
+}
+
+.bp_SpaceBarItem {
+   border: none !important;
+   background: none !important;
+   box-shadow: none !important;
+   -webkit-box-shadow: none !important;
+}
+
+.bp_SpaceBarItem.active {
+   background: hsl(0deg 0% 50% / 25%) !important;
+}
+
+/* Ugh, borders */
+.bp_CommandBarSearch {
+   border: none !important;
+   background: hsl(0deg 0% 50% / 25%) !important;
+}
+
+.mx_MessageComposer_wrapper {
+   border: none !important;
+   background: hsl(0deg 0% 50% / 15%) !important;
+}
+
+/* Unread indicator takes too much room */
+.indicator {
+   position: relative;
+   top: 14px;
+   left: 10px;
+   margin-left: -17px;
+}
+
+/* And let's make it read to match the unread counts in the spacebar */
+.bp_RoomTile .indicator.unread {
+   background-color: #f23449;
+}
+
+/* Underlines? Nah */
+.bp_LeftPanel .inboxModeSelector .option {
+   text-decoration: none !important;
+   opacity: 50% !important;
+}
+
+.bp_LeftPanel .inboxModeSelector .option.active {
+   opacity: 100% !important;
+}
+
+/* Let me know who's muted. Icon + dim */
+.isMuted .name:after {
+   content: ' 🔕' !important;
+   /*     filter: grayscale(1); */
+}
+
+.isMuted {
+   opacity: .5
+}
+
+/* ▶ is better than "Send" */
+.mx_MessageComposer_send:before {
+   content: '▶' !important;
+   font-size: 22px;
+   vertical-align: bottom;
+}
+
+.mx_MessageComposer_send {
+   font-size: 0
+}
