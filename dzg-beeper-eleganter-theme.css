@@ -93,7 +93,7 @@ textarea#mx_Field_15, textarea#mx_Field_10 {
    margin-left: -17px;
 }
 
-/* And let's make it read to match the unread counts in the spacebar */
+/* And let's make it red to match the unread counts in the spacebar */
 .bp_RoomTile .indicator.unread {
    background-color: #f23449;
 }
