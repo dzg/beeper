@@ -22,31 +22,36 @@ Just copy the source, go to **Settings > Appearance,** paste into the **Custom C
 *   Different fonts for UI and Messages
 *   No purple gradient
 
-### Screenshots (also works in Light mode)
+### Screenshots:
 
-Spacebar:
+Search / Spacebar:
 
-<img width="343" alt="image" src="https://user-images.githubusercontent.com/466557/156913351-ff7dc832-1738-4438-bc93-7cd3f160add9.png">
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/466557/156913351-ff7dc832-1738-4438-bc93-7cd3f160add9.png"> <img width="361" alt="image" src="https://user-images.githubusercontent.com/466557/156913835-fa7ac7a3-058c-4c31-84f3-b6939bc27968.png">
+
 
 Muted room:
 
-<img width="326" alt="image" src="https://user-images.githubusercontent.com/466557/156913308-ec4a0c9a-eefb-4506-9a57-b72358217fc7.png">
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/466557/156913308-ec4a0c9a-eefb-4506-9a57-b72358217fc7.png"> <img width="352" alt="image" src="https://user-images.githubusercontent.com/466557/156913846-733741c6-5be6-4c74-875c-cb89a8f69c1c.png">
+
 
 Date separator:
 
-<img width="813" alt="image" src="https://user-images.githubusercontent.com/466557/156913424-ed79623b-14f7-4729-b43e-fe7847ac0d68.png">
+<img width="813" alt="image" src="https://user-images.githubusercontent.com/466557/156913424-ed79623b-14f7-4729-b43e-fe7847ac0d68.png"> <img width="785" alt="image" src="https://user-images.githubusercontent.com/466557/156913864-9ddfa219-299d-4b90-a5bf-00e485d839cf.png">
+
 
 Unread:
 
-<img width="362" alt="image" src="https://user-images.githubusercontent.com/466557/156913453-43cf7e07-80b5-42d2-b7bb-bc881a3581ca.png">
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/466557/156913453-43cf7e07-80b5-42d2-b7bb-bc881a3581ca.png"> <img width="357" alt="image" src="https://user-images.githubusercontent.com/466557/156913873-e2458e14-750f-4346-b3f4-750730e83ab0.png">
+
 
 Send field/button:
 
-<img width="760" alt="image" src="https://user-images.githubusercontent.com/466557/156913500-28586e97-109e-4c3d-a6bd-583cec5c910a.png">
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/466557/156913500-28586e97-109e-4c3d-a6bd-583cec5c910a.png"> <img width="751" alt="image" src="https://user-images.githubusercontent.com/466557/156913888-17ff212d-9866-4fc1-808a-8a17a33dccf6.png">
+
 
 No gradient:
 
-<img width="551" alt="image" src="https://user-images.githubusercontent.com/466557/156913511-32e6e710-343e-40b2-bf83-8873ab7be889.png">
+<img width="551" alt="image" src="https://user-images.githubusercontent.com/466557/156913511-32e6e710-343e-40b2-bf83-8873ab7be889.png"> 
 
 
 
