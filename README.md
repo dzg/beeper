@@ -17,10 +17,41 @@ Just copy the source, go to **Settings > Appearance,** paste into the **Custom C
 *   Muted rooms: indicator + dimming
 *   Less obtrusive unread indicator
 *   Full width date separators
-*   No 'Send' text, just ▶ 
+*   No 'Send' text, just ▶
 *   Bigger monospace text areas in prefs
 *   Different fonts for UI and Messages
 *   No purple gradient
+
+### Screenshots (also works in Light mode)
+
+Spacebar:
+
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/466557/156913351-ff7dc832-1738-4438-bc93-7cd3f160add9.png">
+
+Muted room:
+
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/466557/156913308-ec4a0c9a-eefb-4506-9a57-b72358217fc7.png">
+
+Date separator:
+
+<img width="813" alt="image" src="https://user-images.githubusercontent.com/466557/156913424-ed79623b-14f7-4729-b43e-fe7847ac0d68.png">
+
+Unread:
+
+<img width="362" alt="image" src="https://user-images.githubusercontent.com/466557/156913453-43cf7e07-80b5-42d2-b7bb-bc881a3581ca.png">
+
+Send field/button:
+
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/466557/156913500-28586e97-109e-4c3d-a6bd-583cec5c910a.png">
+
+No gradient:
+
+<img width="551" alt="image" src="https://user-images.githubusercontent.com/466557/156913511-32e6e710-343e-40b2-bf83-8873ab7be889.png">
+
+
+
+
+
 
 ## How to change conversation (room) name (desktop)
 
