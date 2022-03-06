@@ -64,4 +64,4 @@ _This may not work on some chats, especially group chats._
 5.  Click **Send**
 6.  _Et voila!_
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e556795e-5a0b-46f1-9d1d-e4704a2e4685/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220305%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220305T205023Z&X-Amz-Expires=86400&X-Amz-Signature=85fac594c15560647fb3bbe8d8a35eef856cd9be9e2ae31c5b26ca9324f7c502&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+<img width="551" src="https://user-images.githubusercontent.com/466557/156913619-ebde5fb1-5629-49cf-a845-da9b35805196.png">
