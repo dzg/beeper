@@ -2,7 +2,10 @@
 
 This is just an assortment of Beeper enhancements/tricks/etc.
 
-## Elganter Theme
+1. [Elganter Theme](https://github.com/dzg/beeper/blob/main/README.md#elganter-theme)
+1. [How to change conversation (room) name (desktop)](https://github.com/dzg/beeper/blob/main/README.md#how-to-change-conversation-room-name-desktop)
+
+## 1. Eleganter Theme
 
 First, a more elegant (IMHO) theme for the desktop client: https://github.com/dzg/beeper/blob/main/dzg-beeper-eleganter-theme.css
 
@@ -58,7 +61,7 @@ No gradient:
 
 
 
-## How to change conversation (room) name (desktop)
+## 2. How to change conversation (room) name (desktop)
 
 _This may not work on some chats, especially group chats._
 
