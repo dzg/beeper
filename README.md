@@ -27,9 +27,10 @@ Just copy the source, go to **Settings > Appearance,** paste into the **Custom C
 
 ### Screenshots:
 
-Search / Spacebar:
+Search / Spacebar — now even flatter!
 
-<img width="343" alt="image" src="https://user-images.githubusercontent.com/466557/156913351-ff7dc832-1738-4438-bc93-7cd3f160add9.png"> <img width="361" alt="image" src="https://user-images.githubusercontent.com/466557/156913835-fa7ac7a3-058c-4c31-84f3-b6939bc27968.png">
+<img width="314" alt="image" src="https://user-images.githubusercontent.com/466557/157182325-efee82c4-9fe4-41e9-b6df-4399ee2149dd.png"> <img width="316" alt="image" src="https://user-images.githubusercontent.com/466557/157182381-08613180-1a27-4991-b283-4e0ed7253ca6.png">
+
 
 
 Muted room:
