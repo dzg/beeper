@@ -5,7 +5,7 @@
 
    Features:
    - Flatter. No borders.
-   - Sexier, flatter 'Spacebar'
+   - Sexier 'Spacebar'
    - Muted room indicator
    - Less obtrusive unread
    - Full width date separators
@@ -15,282 +15,239 @@
    - No purple gradient
 
    Repo: https://github.com/dzg/beeper
-   Version: 1.2
+   Version: 1
 */
 
-/* I like Roboto. Remove this if you want to keep your fonts */
+
+/* I like Roboto*/
 * {
-  font-family: Roboto, system-ui, Avenir, Helvetica, Lato, Apple Color Emoji,
-    Twemoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif, Noto Color Emoji !important;
+   font-family: Roboto, system-ui, Avenir, Helvetica, Lato, Apple Color Emoji, Twemoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif, Noto Color Emoji !important;
 }
 
 /* Messages with serifs */
 .mx_EventTile_body {
-  font-family: RobotoSlab-Regular !important;
+   font-family: RobotoSlab-Regular !important;
 }
 
 /* Mono when I'm tweaking CSS */
-textarea#mx_Field_15,
-textarea#mx_Field_10 {
-  font-family: monospace !important;
-  font-size: 80% !important;
+textarea#mx_Field_15, textarea#mx_Field_10 {
+   font-family: monospace !important;
+   font-size: 80% !important;
 }
 
 /* Need more room for my CSS */
 .mx_AppearanceUserSettingsTab .mx_Field {
-  width: 100%;
-  height: 50ex;
+   width: 100%;
+   height: 50ex;
 }
 .mx_DevTools_textarea textarea {
-  font-family: monospace !important;
+   font-family: monospace !important;
 }
 
 /* Full width date separator */
 .mx_DateSeparator > div {
-  width: 100% !important;
-  border: none !important;
-  background: hsl(0deg 0% 50% / 15%) !important;
-  border-radius: 0 !important;
-  height: 4ex !important;
+   width: 100% !important;
+   border: none !important;
+   background: hsl(0deg 0% 50% / 15%) !important;
+   border-radius: 0 !important;
+   height: 4ex !important;
 }
 
 /* Not a fan of the gradient */
 .mx_EventTile_messageOut .mx_EventTile_line {
-  background: hsl(276, 82%, 59%);
+   background: hsl(276, 82%, 59%);
 }
 
 /* Ugh, borders */
 .bp_CommandBarSearch {
-  border: none !important;
-  background: hsl(0deg 0% 50% / 25%) !important;
+   border: none !important;
+   background: hsl(0deg 0% 50% / 25%) !important;
 }
 
 .mx_MessageComposer_wrapper {
-  border: none !important;
-  background: hsl(0deg 0% 50% / 15%) !important;
+   border: none !important;
+   background: hsl(0deg 0% 50% / 15%) !important;
 }
 
 /* Unread indicator takes too much room */
 .indicator {
-  position: relative;
-  top: 14px;
-  left: 10px;
-  margin-left: -17px;
+   position: relative;
+   top: 14px;
+   left: 10px;
+   margin-left: -17px;
 }
 
 /* And let's make it red to match the unread counts in the spacebar */
 .bp_RoomTile .indicator.unread {
-  background-color: #f23449;
+   background-color: #f23449;
 }
 
 /* Underlines? Nah */
 .bp_LeftPanel .inboxModeSelector .option {
-  text-decoration: none !important;
-  opacity: 50% !important;
+   text-decoration: none !important;
+   opacity: 50% !important;
 }
 
 .bp_LeftPanel .inboxModeSelector .option.active {
-  opacity: 100% !important;
+   opacity: 100% !important;
 }
 
 /* Let me know who's muted. Icon + dim */
 .isMuted .name:after {
-  content: " 🔕" !important;
-  /* Uncomment this if you want the bell to be monochrome
-       filter: grayscale(1); 
-	*/
+   content: ' 🔕' !important;
+   /*     filter: grayscale(1); */
 }
 
-.isMuted { 
-  opacity: 0.5;
+.isMuted {
+   opacity: .5
 }
 
 /* ▶ is better than "Send" */
 .mx_MessageComposer_send:before {
-  content: "▶" !important;
-  font-size: 22px;
-  vertical-align: bottom;
+   content: '▶' !important;
+   font-size: 22px;
+   vertical-align: bottom;
 }
 
 .mx_MessageComposer_send {
-  font-size: 0;
+   font-size: 0
 }
 
-/* Flatter, sexier Spacebar */
+
+/* Spacebar is clunky and I don't like borders. Let's flatten it. */
 .bp_LeftPanel .spaceBar .grid {
-  grid-gap: 1px !important;
+   grid-gap: 1px !important;
 }
 
 .bp_SpaceBarItem {
-  border: none !important;
-  background: none !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
+   border: none !important;
+   background: none !important;
+   box-shadow: none !important;
+   -webkit-box-shadow: none !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.inbox {
-  -webkit-mask-image: url(/webapp/img/icon-inbox.f01940d.svg) !important;
-  mask-image: url(/webapp/img/icon-inbox.f01940d.svg) !important;
+
+
+/* .bp_SpaceBarItem.active {
+   background: hsl(0deg 0% 50% / 25%) !important;
+}
+*/
+
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.inbox {
+	-webkit-mask-image: url(/webapp/img/icon-inbox.f01940d.svg) !important;
+	mask-image: url(/webapp/img/icon-inbox.f01940d.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.low {
-  -webkit-mask-image: url(/webapp/img/icon-low-priority.b35ee01.svg) !important;
-  mask-image: url(/webapp/img/icon-low-priority.b35ee01.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.low {
+	-webkit-mask-image: url(/webapp/img/icon-low-priority.b35ee01.svg) !important;
+	mask-image: url(/webapp/img/icon-low-priority.b35ee01.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.bookmarks {
-  -webkit-mask-image: url(/webapp/img/icons-bookmarks.faf8f6b.svg) !important;
-  mask-image: url(/webapp/img/icons-bookmarks.faf8f6b.svg) !important;
-  -webkit-mask-size: 18px;
-  mask-size: 18px;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.bookmarks {
+	-webkit-mask-image: url(/webapp/img/icons-bookmarks.faf8f6b.svg) !important;
+	mask-image: url(/webapp/img/icons-bookmarks.faf8f6b.svg) !important;
+	-webkit-mask-size: 18px;
+	mask-size: 18px;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.androidsms {
-  -webkit-mask-image: url(/webapp/img/social/color/androidsms.9949492.svg) !important;
-  mask-image: url(/webapp/img/social/color/androidsms.9949492.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.androidsms {
+	-webkit-mask-image: url(/webapp/img/social/color/androidsms.9949492.svg) !important;
+	mask-image: url(/webapp/img/social/color/androidsms.9949492.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.beeper {
-  -webkit-mask-image: url(/webapp/img/social/color/beeper.4c81857.svg) !important;
-  mask-image: url(/webapp/img/social/color/beeper.4c81857.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.beeper {
+	-webkit-mask-image: url(/webapp/img/social/color/beeper.4c81857.svg) !important;
+	mask-image: url(/webapp/img/social/color/beeper.4c81857.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.discord {
-  -webkit-mask-image: url(/webapp/img/social/color/discord.08f2902.svg) !important;
-  mask-image: url(/webapp/img/social/color/discord.08f2902.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.discord {
+	-webkit-mask-image: url(/webapp/img/social/color/discord.08f2902.svg) !important;
+	mask-image: url(/webapp/img/social/color/discord.08f2902.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.facebook {
-  -webkit-mask-image: url(/webapp/img/social/color/facebook_messenger.5989667.svg) !important;
-  mask-image: url(/webapp/img/social/color/facebook_messenger.5989667.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.facebook {
+	-webkit-mask-image: url(/webapp/img/social/color/facebook_messenger.5989667.svg) !important;
+	mask-image: url(/webapp/img/social/color/facebook_messenger.5989667.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.googlechat {
-  -webkit-mask-image: url(/webapp/img/social/color/googlechat.661e835.svg) !important;
-  mask-image: url(/webapp/img/social/color/googlechat.661e835.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.googlechat {
+	-webkit-mask-image: url(/webapp/img/social/color/googlechat.661e835.svg) !important;
+	mask-image: url(/webapp/img/social/color/googlechat.661e835.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.hangouts {
-  -webkit-mask-image: url(/webapp/img/social/color/hangouts.29e12dc.svg) !important;
-  mask-image: url(/webapp/img/social/color/hangouts.29e12dc.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.hangouts {
+	-webkit-mask-image: url(/webapp/img/social/color/hangouts.29e12dc.svg) !important;
+	mask-image: url(/webapp/img/social/color/hangouts.29e12dc.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.imessage {
-  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 26.0.3  SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16%3B' xml:space='preserve'%3E%3Cpath d='M11.2 2H4.8C3.2 2 2 3.2 2 4.8v6.4C2 12.8 3.2 14 4.8 14h6.4c1.5 0 2.8-1.2 2.8-2.8V4.8C14 3.2 12.8 2 11.2 2z M8.1 11.5c-0.4 0-0.9-0.1-1.3-0.2c-0.6 0.5-1.9 0.9-1.4 0.6c0.3-0.2 0.4-0.6 0.4-1c-1.2-0.7-2.1-1.8-2.1-3.1c0-2 2-3.7 4.4-3.7c2.4 0 4.4 1.7 4.4 3.7S10.5 11.5 8.1 11.5z'/%3E%3C/svg%3E") !important;
-  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 26.0.3  SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16%3B' xml:space='preserve'%3E%3Cpath d='M11.2 2H4.8C3.2 2 2 3.2 2 4.8v6.4C2 12.8 3.2 14 4.8 14h6.4c1.5 0 2.8-1.2 2.8-2.8V4.8C14 3.2 12.8 2 11.2 2z M8.1 11.5c-0.4 0-0.9-0.1-1.3-0.2c-0.6 0.5-1.9 0.9-1.4 0.6c0.3-0.2 0.4-0.6 0.4-1c-1.2-0.7-2.1-1.8-2.1-3.1c0-2 2-3.7 4.4-3.7c2.4 0 4.4 1.7 4.4 3.7S10.5 11.5 8.1 11.5z'/%3E%3C/svg%3E") !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.imessage {
+	-webkit-mask-image: url(/webapp/img/social/color/imessage.25ffa72.svg) !important;
+	-webkit-mask-image: url(/webapp/img/social/imessage.a3eb834.svg) !important;
+	mask-image: url(/webapp/img/social/color/imessage.25ffa72.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.instagram {
-  -webkit-mask-image: url(/webapp/img/social/color/instagram.f5a5ccc.svg) !important;
-  mask-image: url(/webapp/img/social/color/instagram.f5a5ccc.svg) !important;
-  -webkit-mask-size: 24px;
-  mask-size: 24px;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.instagram {
+	-webkit-mask-image: url(/webapp/img/social/color/instagram.f5a5ccc.svg) !important;
+	mask-image: url(/webapp/img/social/color/instagram.f5a5ccc.svg) !important;
+	-webkit-mask-size: 24px;
+	mask-size: 24px;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.linkedin {
-  -webkit-mask-image: url(/webapp/img/social/color/linkedin.1ec3520.svg) !important;
-  mask-image: url(/webapp/img/social/color/linkedin.1ec3520.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.linkedin {
+	-webkit-mask-image: url(/webapp/img/social/color/linkedin.1ec3520.svg) !important;
+	mask-image: url(/webapp/img/social/color/linkedin.1ec3520.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.matrix {
-  -webkit-mask-image: url(/webapp/img/social/color/matrix.de1088d.svg) !important;
-  mask-image: url(/webapp/img/social/color/matrix.de1088d.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.matrix {
+	-webkit-mask-image: url(/webapp/img/social/color/matrix.de1088d.svg) !important;
+	mask-image: url(/webapp/img/social/color/matrix.de1088d.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.signal {
-  -webkit-mask-image: url(/webapp/img/social/color/signal.eca5011.svg) !important;
-  mask-image: url(/webapp/img/social/color/signal.eca5011.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.signal {
+	-webkit-mask-image: url(/webapp/img/social/color/signal.eca5011.svg) !important;
+	mask-image: url(/webapp/img/social/color/signal.eca5011.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.slack {
-  -webkit-mask-image: url(/webapp/img/social/color/slack.c3bca9a.svg) !important;
-  mask-image: url(/webapp/img/social/color/slack.c3bca9a.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.slack {
+	-webkit-mask-image: url(/webapp/img/social/color/slack.c3bca9a.svg) !important;
+	mask-image: url(/webapp/img/social/color/slack.c3bca9a.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.telegram {
-  -webkit-mask-image: url(/webapp/img/social/color/telegram.38af351.svg) !important;
-  mask-image: url(/webapp/img/social/color/telegram.38af351.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.telegram {
+	-webkit-mask-image: url(/webapp/img/social/color/telegram.38af351.svg) !important;
+	mask-image: url(/webapp/img/social/color/telegram.38af351.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.twitter {
-  -webkit-mask-image: url(/webapp/img/social/color/twitter.f195ce0.svg) !important;
-  mask-image: url(/webapp/img/social/color/twitter.f195ce0.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.twitter {
+	-webkit-mask-image: url(/webapp/img/social/color/twitter.f195ce0.svg) !important;
+	mask-image: url(/webapp/img/social/color/twitter.f195ce0.svg) !important;
 }
 
-.bp_LeftPanel
-  .spaceBar
-  .bp_SpaceBarItem:not(.active)
-  .bp_SpaceBarItem_image.whatsapp {
-  -webkit-mask-image: url(/webapp/img/social/color/whatsapp.6beca2a.svg) !important;
-  mask-image: url(/webapp/img/social/color/whatsapp.6beca2a.svg) !important;
+.bp_LeftPanel .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image.whatsapp {
+	-webkit-mask-image: url(/webapp/img/social/color/whatsapp.6beca2a.svg) !important;
+	mask-image: url(/webapp/img/social/color/whatsapp.6beca2a.svg) !important;
 }
 
 .bp_LeftPanel .spaceBar .active .bp_SpaceBarItem_image {
-  opacity: 1 !important;
+/*     background: #b72af4; */
+	opacity: 1 !important;
 }
 
 .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image {
-  background: #999;
+	background: #999;
 }
 
 .spaceBar .bp_SpaceBarItem:not(.active) .bp_SpaceBarItem_image {
-  opacity: 0.5;
-  background-image: none !important;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 24px;
-  mask-size: 24px;
-  -webkit-mask-position: center;
-  mask-position: center;
+	opacity: .5;
+	background-image: none !important;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: 24px ;
+	mask-size: 24px;
+	-webkit-mask-position: center;
+	mask-position: center;
+}
+
+code, code * {
+    font-family: RobotoMono-Regular, monospace !important;
 }
